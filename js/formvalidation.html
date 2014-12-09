@@ -1,0 +1,59 @@
+<html>
+<head>
+<style type="text/css">
+input[type='text'], input[type='password']{
+  padding:0.9em;
+  border:1px solid green;
+  width:300px;
+}
+.error{
+  color:red;
+}
+.success{
+  color:green;
+}
+</style>
+<script type="text/javascript">
+  function validate_user(){
+    var uvalue=document.getElementById("uname");
+    if(uvalue.value=="" || uvalue==null){
+      document.getElementById("uerror").innerHTML="You must Enter a Username!";
+      document.getElementById("uerror").className="error";
+      
+    }
+    else if(uvalue.value.length < 9){
+      document.getElementById("uerror").innerHTML="Username must be between 1 and 9 characters!";
+      document.getElementById("uerror").className="error";
+    }
+    else{
+      document.getElementById("uerror").innerHTML="";
+      document.getElementById("uerror").innerHTML="";
+      document.getElementById("allsuccess").innerHTML="Username: OK";
+      document.getElementById("allsuccess").className="success";
+    }
+    
+  }
+
+</script>
+</head>
+
+<body>
+  <form>
+    <table>
+      <tr>
+        <td>Username:</td><td><input type="text" id="uname" onkeyup="validate_user()"></td><td><span id="uerror"></span></td>
+      </tr>
+      
+      <tr>
+        <td>Password:</td><td><input type="password" id="pass"></td><td><span id="perror"></span></td>
+      </tr>
+      
+      <tr>
+        <td>Retype Password:</td><td><input type="text" id="rpass"></td><td><span id="rperror"></span></td>
+      </tr>
+    </table>
+  </form>
+<h3 id="allsuccess"></h3>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!Doctype html>
+
+
+<html>
+  <head>
+  <style>
+  #reg{
+    display:none;
+  }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#reglk").click(function(){
+      $("#login").slideUp(3000);
+      $("#reg").show();
+    });
+    
+    $("#loglk").click(function(){
+      $("#login").slideDown(3000);
+      $("#reg").fadeOut(3000).css("background","gray");
+    });
+    $("p").click(function(){
+      $("p").css("color","green");
+      $("p").html("<span>Paragraph style has been changed!</span>");
+    });
+  });
+  </script>
+  </head>
+
+  <body>
+    <p>
+      jQuery Mobile framework takes the "write less, do more" mantra to the next level: Instead of writing unique applications for each mobile device or OS, the jQuery mobile framework allows you to design a single highly-branded responsive web site or application that will work on all popular smartphone, tablet, and desktop 
+    </p>
+    <div id="login">
+      <a href="javascript:void" id="reglk">New Use? Create Account!</a>
+      <table>
+        <tr>
+          <td>
+            Username:
+          </td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            Password:
+          </td>
+          <td>
+            <input type="password">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+          &nbsp;
+          </td>
+          <td>
+            <input type="submit" value="Login!">
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+    
+    <div id="reg">
+      <a href="javascript:void" id="loglk">Existing User? Login here!</a>
+      <table>
+        <tr>
+          <td>
+            First Name:
+          </td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <tr>
+            <td>
+              Last Name:
+            </td>
+            <td>
+              <input type="text">
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              Email:
+            </td>
+            <td>
+              <input type="text">
+            </td>
+          </tr>
+          <td>
+            Username:
+          </td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            Password:
+          </td>
+          <td>
+            <input type="password">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            Retype Password:
+          </td>
+          <td>
+            <input type="password">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            &nbsp;
+          </td>
+          <td>
+            <input type="submit" value="Register!">
+          </td>
+        </tr>
+      </table>
+      
+      
+    </div>
+    
+    
+  </body>
+</html>

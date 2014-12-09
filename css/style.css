@@ -1,0 +1,43 @@
+#header{
+  background:black;
+  color:white;
+  padding:0.4em;
+
+}
+#header h3{
+  padding:0.9em;
+}
+
+.menu-top,#leftnav ul{
+  background:#333;
+  color:white;
+  list-style:none;
+  padding:0.4em;
+}
+.menu-top,#leftnav ul li{
+  display:inline;
+  padding:0.5em;
+}
+.menu-top,#leftnav ul li a{
+  color:white;
+  text-decoration:none;
+}
+
+.menu-top ul li a:hover{
+  color:black;
+  text-decoration:none;
+  background:white;
+}
+#leftnav{
+  float:left;
+  width:200px;
+}
+#leftnav ul li{
+  display:blz
+}
+#content{
+  margin-left:210px;
+}
+#rightnav{
+  float:right;
+}
